@@ -1,5 +1,6 @@
 @import url('https://api.fontshare.com/v2/css?f[]=clash-display@1&display=swap');
 
+/* VARIABLES */
 :root{
     --c-dark: #212529;
     --c-brand: #4e57d4;
@@ -10,6 +11,7 @@
     --transition: all 0.5s ease
 }
 
+/*RESET A HELPERS */
 body{
     font-family: var(--font-base);
     line-height: 1.7s;
@@ -39,4 +41,32 @@ img{
 .section-padding {
     padding-top: 140px;
     padding-bottom: 140px;
+}
+
+/* NAVBAR */
+.navbar-nav .nav-link{
+    font-weight: 500;
+    color: black;
+}
+
+.navbar-nav .nav-link.active {
+    color: rgba(9, 144, 255, 0.541);
+}
+
+/* BTN */
+.btn{
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 10px 24px;
+}
+
+.btn-brand {
+  background-color: blue;     /* Blue background */
+  color: white;               /* White text */
+}
+
+.btn-brand:hover {
+  background-color: darkblue; /* Darker blue on hover */
 }

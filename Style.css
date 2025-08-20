@@ -44,6 +44,10 @@ img{
 }
 
 /* NAVBAR */
+.navbar{
+   box-shadow: var(--box-shadow);
+}
+
 .navbar-nav .nav-link{
     font-weight: 500;
     color: black;
@@ -64,9 +68,10 @@ img{
 
 .btn-brand {
   background-color: blue;     /* Blue background */
-  color: white;               /* White text */
+  color: rgb(218, 12, 12);               /* White text */
 }
 
 .btn-brand:hover {
-  background: darkblue; /* Darker blue on hover */
+  background-color: darkblue; /* Darker blue on hover */
+  border-color: var(--c-brand-light);
 }

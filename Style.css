@@ -68,5 +68,5 @@ img{
 }
 
 .btn-brand:hover {
-  background-color: darkblue; /* Darker blue on hover */
+  background: darkblue; /* Darker blue on hover */
 }

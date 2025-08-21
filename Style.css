@@ -1,39 +1,41 @@
 @import url('https://api.fontshare.com/v2/css?f[]=clash-display@1&display=swap');
 
 /* VARIABLES */
-:root{
+:root {
     --c-dark: #212529;
     --c-brand: #4e57d4;
-    --c-brand-light: #4f58d3;
+    --c-brand-light: #6970dd;
+    --c-brand-rgb: 78, 87, 212;
     --c-body: #727272;
-    --font-base: clash-display, sans-serif;
-    --box-shadow: 0px 15px 25px rgba(0,0,0,08);
-    --transition: all 0.5s ease
+    --font-base: "ClashDisplay", sans-serif;
+    --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
+    --transition: all 0.5s ease;
 }
 
-/*RESET A HELPERS */
-body{
+/* RESET & HELPERS */
+body {
     font-family: var(--font-base);
-    line-height: 1.7s;
+    line-height: 1.7;
     color: var(--c-body);
 }
 
-h1, h2, h3, h4, h6,
+h1, h2, h3,h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
     font-weight: 600;
+    color: var(--c-dark);
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--c-brand);
     transition: var(--transition);
 }
 
-a:hover{
+a:hover {
     color: var(--c-brand-light);
 }
 
-img{
+img {
     max-width: 100%;
     height: auto;
 }
@@ -43,17 +45,70 @@ img{
     padding-bottom: 140px;
 }
 
-/* NAVBAR */
-.navbar{
-   box-shadow: var(--box-shadow);
+.theme-shadow {
+    box-shadow: var(--box-shadow);
 }
 
-.navbar-nav .nav-link{
+/* IMAGE ZOOM */
+.image-zoom {
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.image-zoom-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.image-zoom-wrapper img{
+     transition: var(--transition);
+}
+
+.image-zoom:hover .image-zoom-wrapper img {
+    transform: scale(1.1);
+}
+
+
+/* NAVBAR */
+.navbar {
+    box-shadow: var(--box-shadow);
+}
+
+.navbar-nav .nav-link {
     font-weight: 500;
-    color: black;
+    color: var(--c-dark);
 }
 
 .navbar-nav .nav-link.active {
-    color: rgba(9, 144, 255, 0.541);
+    color: var(--c-brand);
 }
 
+
+/* BTN */
+.btn {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 10px 24px;
+}
+
+.btn-brand {
+    background-color: var(--c-brand);
+    border-color: var(--c-brand);
+    color: white;
+}
+
+.btn-brand:hover {
+    background-color: var(--c-brand-light);
+    border-color: var(--c-brand-light);
+    color: white;
+}
+
+
+/* HERO */
+#hero {
+    background: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)), url(../images/hero-1.jpg);
+    background-position: center;
+    background-size: cover;
+}

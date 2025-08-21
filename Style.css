@@ -57,21 +57,3 @@ img{
     color: rgba(9, 144, 255, 0.541);
 }
 
-/* BTN */
-.btn{
-    font-weight: 600;
-    font-size: 14px;
-    text-transform: uppercase;
-    border-radius: 0;
-    padding: 10px 24px;
-}
-
-.btn-brand {
-  background-color: blue;     /* Blue background */
-  color: rgb(218, 12, 12);               /* White text */
-}
-
-.btn-brand:hover {
-  background-color: darkblue; /* Darker blue on hover */
-  border-color: var(--c-brand-light);
-}

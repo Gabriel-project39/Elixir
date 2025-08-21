@@ -94,7 +94,7 @@ img {
 }
 
 .btn-brand {
-    background-color: var(--c-brand);
+    background-color: blue;
     border-color: var(--c-brand);
     color: white;
 }

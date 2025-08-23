@@ -186,6 +186,23 @@ img {
 background: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)), url(../images/counter.jpg);
     background-position: center;
     background-size: cover;
+    color: white;
+}
+
+/* PORTFOLIO */
+.portfolio-item .iconbox{
+    background-color: #6970dd;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.portfolio-item:hover .iconbox{
+    opacity: 1;
+    top: 50%;
 }
 
 

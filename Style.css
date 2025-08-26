@@ -226,3 +226,15 @@ background: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-
     transform: rotate(45deg);
  }
 
+  /* TEAM */
+  .team-member-content{
+    background-color: #6970dd;
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    width: calc(100% - 50px);
+    transform: translateX(-50%);
+    padding: 24px;
+    color: white;
+  }
+
